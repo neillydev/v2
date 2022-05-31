@@ -4,5 +4,3 @@
 <p align="center">
   Built with <a href="https://reactjs.org/" target="_blank">React and NextJS</a>
 </p>
-
-![portfolio](https://i.imgur.com/KIgcv6T.png)
