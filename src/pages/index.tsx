@@ -1,10 +1,11 @@
 import Head from "next/head";
+import ContainerBlock from "../components/ContainerBlock";
 
 const Homepage = () => {
     return (
-        <div>
-
-        </div>
+        <ContainerBlock>
+            
+        </ContainerBlock>
     )
 };
 
