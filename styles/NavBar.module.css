@@ -1,0 +1,67 @@
+.navHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    padding: 0px 50px;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+}
+
+.nav {
+    counter-reset: item 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-box-align: center;
+    position: relative;
+    width: 100%;
+    color: #ccd6f6;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.navList {
+
+}
+
+.navList ol {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.navItemContainer {
+    counter-increment: item 1;
+    margin: 0px 5px;
+    position: relative;
+    font-size: 13px;
+}
+
+.navItemContainer a {
+    padding: 10px;
+}
+
+.navItemContainer a::before {
+    content: "0" counter(item) ".";
+    margin-right: 5px;
+    color: #64ffda;
+    font-size: 12px;
+    text-align: right;
+}
