@@ -24,6 +24,7 @@
   },
   "include": [
     "src/pages",
+    "src/components",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
