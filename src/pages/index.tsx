@@ -1,6 +1,5 @@
-import Head from "next/head";
 import ContainerBlock from "../components/ContainerBlock";
-import NavBar from "../components/NavBar";
+import Hero from "../components/Hero";
 
 const Homepage = () => {
     return (
@@ -8,7 +7,7 @@ const Homepage = () => {
         title="Vernon Neilly - Developer, Scientist, Creator"
         description="Collection displaying the works of Vernon Neilly"
         >
-            <NavBar />
+            <Hero />
         </ContainerBlock>
     )
 };
