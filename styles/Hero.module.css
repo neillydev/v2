@@ -1,6 +1,15 @@
 .heroSection {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    justify-self: center;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.heroSectionContainer {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: flex-start;
     -webkit-box-pack: center;
