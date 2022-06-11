@@ -7,6 +7,7 @@ html {
 body {
     background-color: #0a192f;
     color: #8892b0;
+    background-image: linear-gradient(rgb(28, 21, 60) 27%, rgb(45, 31, 102));
     margin: 0px;
     overflow-x: hidden;
     height: 100%;
@@ -20,6 +21,19 @@ body {
 
 ol {
     list-style: none;
+}
+
+ol li {
+    display: list-item;
+}
+
+ol li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
 }
 
 li {
@@ -52,7 +66,7 @@ p > a {
     text-decoration-skip-ink: auto;
     position: relative;
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    color: #64ffda;
+    color: rgb(204 161 255); 
 }
 
 p > a::after {
@@ -62,7 +76,7 @@ p > a::after {
     height: 1px;
     position: relative;
     bottom: 0.37em;
-    background-color: #64ffda;
+    background-color: rgb(204 161 255);
     transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
     opacity: 0.5;
 }
