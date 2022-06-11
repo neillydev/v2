@@ -1,21 +1,66 @@
 .codeContainer {
     display: flex;
+    flex-direction: column;
     align-self: center;
     /* width: 65rem; */
     width: 36rem;
     height: 20rem;
     /* margin-right: 10%; */
     /* margin-bottom: 5rem; */
-    border-radius: 0.25rem;
-    border-width: 2px;
-    border-style: solid;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: rgba(15, 7, 56, 0.7);
     border-color: #222f48;
     --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-family: monospace;
+    line-height: 18px;
+    text-align: left;
+    position: relative;
 }
+
+/* .codeContainer::before {
+    content: "$";
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    color: rgb(113, 86, 217);
+    font-size: 16px;
+} */
 
 .codeHeader {
     display: flex;
+    align-items: center;
+    height: 3.5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    font-family: "Monaco", "Courier New";
+    font-size: 13px;
+    color: rgb(230, 230, 230);
+}
+
+.codeBody {
+    display: flex;
+    padding-left: 12px;
+}
+
+.code {
+    font-family: "Monaco", "Courier New";
+    font-size: 13px;
+    color: rgb(230, 230, 230);
+}
+
+.codeLine {
+    color: rgb(230, 230, 230);
+}
+
+.codeCommandPre {
+    color: rgb(113, 86, 217);
+    font-size: 16px;
+}
+
+.var {
+    color: rgb(113, 86, 217);
 }
 
 .mockControls {
@@ -34,13 +79,16 @@
 }
 
 .mockControlClose {
-    background-color: rgba(239, 68, 68, 1);;
+    background-color: rgba(239, 68, 68, 1);
+    ;
 }
 
 .mockControlMin {
-    background-color: rgba(245, 158, 11, 1);;
+    background-color: rgba(245, 158, 11, 1);
+    ;
 }
 
 .mockControlMax {
-    background-color: rgba(16, 185, 129, 1);;
+    background-color: rgba(16, 185, 129, 1);
+    ;
 }

@@ -61,7 +61,7 @@
 .navItemContainer a::before {
     content: "0" counter(item) ".";
     margin-right: 5px;
-    color: #64ffda;
+    color: rgb(204 161 255);
     font-size: 12px;
     text-align: right;
 }
