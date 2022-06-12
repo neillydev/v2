@@ -1,5 +1,6 @@
 import ContainerBlock from "../components/ContainerBlock";
 import Hero from "../components/Hero";
+import About from "../components/About";
 
 const Homepage = () => {
     return (
@@ -8,6 +9,7 @@ const Homepage = () => {
         description="Collection displaying the works of Vernon Neilly"
         >
             <Hero />
+            <About />
         </ContainerBlock>
     )
 };
