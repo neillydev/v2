@@ -16,12 +16,12 @@ const About = () => {
                     <p>From humble beginnings, creating websites with HTML, Javascript, and CSS, to building plugins and web applications for various clients, to working with a company, I've had the privilege to procure valuable experience from various different avenues.</p>
                     <p>Below are technologies I work with consistently:</p>
                     <ul className={styles.aboutTechnologies}>
-                        <li>JavaScript</li>
-                        <li>TypeScript</li>
-                        <li>Node.js</li>
+                        <li>JavaScript/Typescript</li>
+                        <li>NodeJS</li>
                         <li>Python</li>
                         <li>React</li>
-                        <li>Angular</li>
+                        <li>NextJS</li>
+                        <li>GraphQL</li>
                     </ul>
                 </div>
             </div>
