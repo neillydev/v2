@@ -1,0 +1,120 @@
+.experienceContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0px;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.experienceContent {
+
+}
+
+.experienceHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    visibility: visible;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+}
+
+.experienceHeader::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -5px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: rgb(113, 86, 217);
+}
+
+.experienceHeader > h2 {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 0px 40px;
+    /* width: 100%; */
+    font-size: clamp(26px,5vw,32px);
+    white-space: nowrap;
+}
+
+.experienceBody {
+    display: flex;
+}
+
+.experienceList {
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.experienceTab {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    padding: 0px 20px 2px;
+    border-left: 2px solid #edf2ff;
+    background-color: transparent;
+    color: #edf2ff;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.experienceSelected {
+    color: rgb(204 161 255);
+    border-left: 2px solid rgb(204 161 255);
+}
+
+.experienceBodyContent {
+    position: relative;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.experienceBodyItem {
+    width: 100%;
+    height: auto;
+    padding: 10px 5px;
+}
+
+.experienceBodyItem > p {
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 14px;
+    margin-top: 0px;
+}
+
+.experienceBodyItem > ul {
+    padding: 0px;
+    margin: 0px;
+    font-size: 18px;
+}
+
+.experienceBodyItem > ul > li::before {
+    content: "▹";
+    position: absolute;
+    left: 0px;
+    color: rgb(204 161 255);
+}
+
+.experienceBodyItem > ul > li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
