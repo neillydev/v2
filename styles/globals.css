@@ -85,3 +85,13 @@ img, video {
     max-width: 100%;
     height: auto;
 }
+
+button {
+    cursor: pointer;
+    border: 0px;
+    border-radius: 0px;
+}
+
+ul {
+    list-style: none;
+}
