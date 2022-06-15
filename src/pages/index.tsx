@@ -2,6 +2,7 @@ import ContainerBlock from "../components/ContainerBlock";
 import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
+import Projects from "../components/Projects";
 
 const Homepage = () => {
     return (
@@ -12,6 +13,7 @@ const Homepage = () => {
             <Hero />
             <About />
             <Experience />
+            <Projects />
         </ContainerBlock>
     )
 };
