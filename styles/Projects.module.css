@@ -1,7 +1,8 @@
 .projContainer {
     padding: 100px 0px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     max-width: 900px;
     margin: auto;
@@ -33,7 +34,119 @@
     align-items: center;
     position: relative;
     margin: 10px 0px 40px;
-    /* width: 100%; */
     font-size: clamp(26px,5vw,32px);
     white-space: nowrap;
+}
+
+.projItemContainer {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+    max-width: 900px;
+    max-height: 362px;
+    width: 100%;
+    height: 100%;
+}
+
+.projItem {
+    display: flex;
+    max-width: 579px;
+    max-height: 362px;
+    width: 100%;
+    height: 100%;
+}
+.projItemWrapper {
+    display: flex;
+    max-width: 579px;
+    max-height: 362px;
+    width: 100%;
+    height: 100%;
+}
+.projItemImg {
+    max-width: 579px;
+    max-height: 362px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(113, 86, 217);
+    border-radius: 6px;
+}
+
+.projItemWrapper > a {
+    position: absolute;
+    opacity: 0.6;
+    transition: opacity 0.15s;
+    transition-timing-function: cubic-bezier(0,0,1,1);
+}
+
+.projItemWrapper > a:hover {
+    position: absolute;
+    opacity: 0;
+    /* transition: opacity 1s;
+    transition-timing-function: (.17,.67,.83,.67); */
+}
+
+.projList {
+    position: relative;
+    z-index: 3;
+    width: max-content;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.projTab {
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 42px;
+    padding: 0px 20px 2px;
+    border-left: 2px solid #edf2ff;
+    background-color: transparent;
+    color: #edf2ff;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 13px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.projTabSelected {
+    color: rgb(204 161 255);
+    border-left: 2px solid rgb(204 161 255);
+}
+
+.projCardContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+.projCard {
+    box-shadow: 0 10px 30px -15px rgb(204 161 255);
+    position: absolute;
+    margin-top: 5rem;
+    z-index: 2;
+    border-radius: 4px;
+    background-color: rgb(204 161 255);
+    color: #edf2ff;
+    font-size: 16px;
+    width: 25rem;
+    padding: 1rem;
+    text-align: right;
+}
+
+.projCardHeader {
+    color: #edf2ff;
+    font-size: clamp(24px, 5vw, 28px);
+    position: absolute;
+    margin-bottom: 10rem;
+    width: 25rem;
+    text-align: right;
 }
