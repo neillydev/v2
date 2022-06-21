@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import NavBar from './NavBar';
 
 import styles from '../../styles/main.module.css';
+import Socials from "./Socials";
 
 export default function ContainerBlock({ children, ...customMeta }: any) {
   const router = useRouter();
@@ -45,7 +46,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
       </Head>
       <div className="containerBlock">
         <NavBar />
-        
+        <Socials />
         <div className="mainContent">
             <main className={styles.mainContainer}>
               {children}
