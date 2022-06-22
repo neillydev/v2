@@ -27,5 +27,17 @@
 }
 
 .socialsListItem > a {
-    padding: 10px;
+    padding: 8px;
+}
+
+.socialsListItem > a > svg {
+    fill: #a8b2d1;
+    width: 22px;
+    height: 22px;
+    transition: margin 0.2s cubic-bezier(.17,.67,.83,.67); 
+}
+
+.socialsListItem > a > svg:hover {
+    margin-bottom: 10px;
+    fill: rgb(239, 115, 255);
 }
