@@ -9,6 +9,16 @@
     height: 100px;
     position: fixed;
     top: 0px;
+    transition: all 0.2s cubic-bezier(.17,.67,.83,.67); 
+}
+
+.navHeaderScrolling {
+    box-shadow: 0 10px 30px -10px #0c0d10;
+}
+
+.navHeaderScrolled {
+    height: 0px;
+    opacity: 0;
 }
 
 .nav {
