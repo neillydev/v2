@@ -42,10 +42,6 @@
     -webkit-box-align: center;
 }
 
-.navList {
-
-}
-
 .navList ol {
     display: flex;
     -webkit-box-pack: justify;
@@ -58,7 +54,6 @@
 }
 
 .navItemContainer {
-    counter-increment: item 1;
     margin: 0px 5px;
     position: relative;
     font-size: 16px;
@@ -69,9 +64,12 @@
 }
 
 .navItemContainer a::before {
-    content: "0" counter(item) ".";
     margin-right: 5px;
     color: rgb(204 161 255);
     font-size: 12px;
     text-align: right;
+}
+
+.navItemContainer:hover {
+    color: rgb(204 161 255);
 }
