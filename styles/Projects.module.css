@@ -133,12 +133,12 @@
 }
 
 .projCard {
-    box-shadow: 0 10px 30px -15px rgb(204 161 255);
+    box-shadow: 0 10px 30px -15px rgb(0, 0, 0);
     position: absolute;
     margin-top: 5rem;
     z-index: 2;
     border-radius: 4px;
-    background-color: rgb(204 161 255);
+    background-color: rgb(113, 86, 217);
     color: #edf2ff;
     font-size: 16px;
     width: 25rem;
@@ -180,6 +180,10 @@
     position: relative;
 }
 
+.projItemWrapper > span:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .projItemOverlay {
     background-color: rgb(113, 86, 217);
     border-radius: 4px;
@@ -200,3 +204,4 @@
     /* transition: opacity 1s;
     transition-timing-function: (.17,.67,.83,.67); */
 }
+
