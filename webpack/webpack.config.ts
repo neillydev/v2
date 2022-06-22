@@ -44,7 +44,18 @@ module.exports = {
                     "css-loader",
                     "postcss-loader"
                 ]
-            }
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    {
+                        loader: 'svg-url-loader',
+                        options: {
+                            limit: 10000,
+                        },
+                    },
+                ],
+            },
         ]
     },
 
@@ -69,3 +80,5 @@ module.exports = {
         port: 3000
     }
 }
+
+export { };
