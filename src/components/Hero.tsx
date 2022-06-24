@@ -32,7 +32,7 @@ const Hero = () => {
           </div>
           <div className={styles.heroItem} style={{ transitionDelay: '400ms' }}>
             <p>
-              I'm a Full Stack Developer with over 10 years of experience engineering remarkable solutions. Presently, I'm developing practical solutions for staffing at&nbsp;
+              I'm a Full Stack Developer with over 10 years of experience engineering remarkable solutions. Currently, I'm developing practical solutions for staffing at&nbsp;
               <a href="https://exactstaff.com" target="_blank" rel="noreferrer">
                 Exact Staff
               </a>
