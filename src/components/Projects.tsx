@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import styles from '../../styles/Projects.module.css';
 
 const Projects = () => {
+    const [selected, setSelected] = useState(0);
+    
     return (
         <div className={styles.projContainer}>
             <div className={styles.projHeader}>
@@ -12,10 +14,10 @@ const Projects = () => {
             </div>
             <div className={styles.projItemContainer}>
                 <div className={styles.projList}>
-                    <button className={`${styles.projTab} ${styles.projTabSelected}`}>
+                    <button className={`${styles.projTab} ${selected === 0 ? styles.projTabSelected : ''}`} onClick={()=>setSelected(0)}>
                         <span className={styles.projText}>Waves</span>
                     </button>
-                    <button className={`${styles.projTab}`}>
+                    <button className={`${styles.projTab} ${selected === 1 ? styles.projTabSelected : ''}`} onClick={()=>setSelected(1)}>
                         <span className={styles.projText}>Covid Maps</span>
                     </button>
                 </div>
