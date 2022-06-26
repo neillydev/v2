@@ -23,7 +23,20 @@ const Experience = () => {
                             <span className={styles.experienceText}>Freelance</span>
                         </button>
                     </div>
-                    <ExperienceCard />
+                    
+                    {selected === 0 ?
+                    <ExperienceCard title='Web Developer @ Exact Staff' duration='May 2022 - Present' achievements={[
+                        'Engineered and maintained various web applications that provides staffing to numerous clients.',
+                        'Utilize various frontend/backend frameworks and query languages such as React, NextJS, NodeJS, GraphQL, Prisma, SQL, and PostgreSQL.',
+                        'Refactored the API, frontend design, and database management for Exact Staff and My Exact Jobs.'
+                    ]} />
+                    :
+                    <ExperienceCard title='Freelance' duration='Jan. 2017 - May 2022' achievements={[
+                        'Engineered and maintained various web applications that provides staffing to numerous clients.',
+                        'Utilize various frontend/backend frameworks and query languages such as React, NextJS, NodeJS, GraphQL, Prisma, SQL, and PostgreSQL.',
+                        'Refactored the API, frontend design, and database management for Exact Staff and My Exact Jobs.'
+                    ]}  />
+                }
                 </div>
             </div>
         </section>
