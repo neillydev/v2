@@ -1,5 +1,8 @@
-.aboutContainer {
+.aboutSection {
     padding: 100px 0px;
+}
+
+.aboutContainer {
     display: flex;
     align-items: center;
     justify-content: center;
