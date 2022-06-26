@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from "framer-motion";
 
 import styles from '../../styles/Experience.module.css';
 import ExperienceCard from './ExperienceCard';
@@ -7,7 +8,19 @@ const Experience = () => {
     const [selected, setSelected] = useState(0);
 
     return (
-        <section className={styles.experienceContainer}>
+        <section className={styles.experienceSection}>
+        <motion.aside
+            className={styles.experienceContainer}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            exit={{
+                opacity: 1,
+            }}
+            transition={{
+                duration: 0.45,
+                delay: 0.4,
+            }}>
             <div className={styles.experienceContent}>
                 <div className={styles.experienceHeader}>
                     <h2>
@@ -39,6 +52,7 @@ const Experience = () => {
                 }
                 </div>
             </div>
+            </motion.aside>
         </section>
     )
 };

@@ -1,7 +1,10 @@
+.experienceSection {
+    padding: 100px 0px;
+}
+
 .experienceContainer {
     display: flex;
     flex-direction: column;
-    padding: 100px 0px;
     align-items: center;
     justify-content: center;
     max-width: 900px;
@@ -86,6 +89,17 @@
     position: relative;
     width: 100%;
     margin-left: 20px;
+    transition: all 0.2s cubic-bezier(.17,.67,.83,.67); 
+}
+
+.experienceFadeOut {
+    height: 0px;
+    opacity: 0;
+}
+
+.experienceFadeIn {
+    height: auto;
+    opacity: 1;
 }
 
 .experienceBodyItem {
@@ -118,3 +132,4 @@
     padding-left: 30px;
     margin-bottom: 10px;
 }
+
