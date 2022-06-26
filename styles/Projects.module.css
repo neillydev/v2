@@ -1,5 +1,8 @@
-.projContainer {
+.projSection {
     padding: 100px 0px;
+}
+
+.projContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;

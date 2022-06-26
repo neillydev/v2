@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ProjectCard from './ProjectCard';
+import { motion } from "framer-motion";
 
 import styles from '../../styles/Projects.module.css';
 
@@ -7,7 +8,19 @@ const Projects = () => {
     const [selected, setSelected] = useState(0);
 
     return (
-        <section className={styles.projContainer}>
+        <section className={styles.projSection}>
+        <motion.aside
+            className={styles.projContainer}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1 }}
+            initial={{ opacity: 0 }}
+            exit={{
+                opacity: 1,
+            }}
+            transition={{
+                duration: 0.45,
+                delay: 0.4,
+            }}>
             <div className={styles.projHeader}>
                 <h2>
                     My Works
@@ -37,6 +50,7 @@ const Projects = () => {
                         />
                 }
             </div>
+            </motion.aside>
         </section>
     )
 }
