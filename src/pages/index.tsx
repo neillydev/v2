@@ -3,6 +3,7 @@ import Hero from "../components/Hero";
 import About from "../components/About";
 import Experience from "../components/Experience";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const Homepage = () => {
     return (
@@ -14,6 +15,7 @@ const Homepage = () => {
             <About />
             <Experience />
             <Projects />
+            <Contact />
         </ContainerBlock>
     )
 };
