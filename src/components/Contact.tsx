@@ -18,7 +18,14 @@ const Contact = () => {
                     duration: 0.45,
                     delay: 0.4,
                 }}>
-
+                <div className={styles.contactHeader}>
+                    <h2>
+                        Contact Me
+                    </h2>
+                </div>
+                <p>
+                    Send me a message if you have a question, or want to get in touch!
+                </p>
             </motion.aside>
         </section>
     )
