@@ -32,4 +32,9 @@
     text-decoration: none;
     cursor: pointer;
     margin-top: 50px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+.contactBtn:hover {
+    background-color: rgba(203, 161, 255, 0.20);
 }
