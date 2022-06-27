@@ -14,7 +14,7 @@ body {
     width: 100%;
     min-height: 100%;
     font-size: 18px;
-    font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+    font-family: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
 }
@@ -46,10 +46,12 @@ a {
     text-decoration: none;
     text-decoration-skip-ink: none;
     color: inherit;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-*, ::before, ::after {
+*,
+::before,
+::after {
     box-sizing: inherit;
 }
 
@@ -58,23 +60,28 @@ a {
     color: #ccd6f6;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0px 0px 10px;
     font-weight: 700;
     color: #ccd6f6;
     line-height: 1.3;
 }
 
-p > a {
+p>a {
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
-    color: rgb(204 161 255); 
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    color: rgb(204 161 255);
 }
 
-p > a::after {
+p>a::after {
     content: "";
     display: block;
     width: 0px;
@@ -82,11 +89,12 @@ p > a::after {
     position: relative;
     bottom: 0.37em;
     background-color: rgb(204 161 255);
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     opacity: 0.5;
 }
 
-img, video {
+img,
+video {
     max-width: 100%;
     height: auto;
 }
@@ -99,4 +107,22 @@ button {
 
 ul {
     list-style: none;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgb(82 63 152) #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    background: linear-gradient(rgb(28, 21, 60) 27%, rgb(45, 31, 102));
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(82 63 152);
+    border-radius: 10px;
 }
