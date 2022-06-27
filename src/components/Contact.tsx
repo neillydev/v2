@@ -26,6 +26,9 @@ const Contact = () => {
                 <p>
                     Send me a message if you have a question, or want to get in touch!
                 </p>
+                <button className={styles.contactBtn}>
+                    Say Hi
+                </button>
             </motion.aside>
         </section>
     )
