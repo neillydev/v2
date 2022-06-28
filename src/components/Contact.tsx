@@ -35,7 +35,8 @@ const Contact = () => {
                 <button className={styles.contactBtn} onClick={handleContactBtn}>
                     {!showContact ? `Say Hi` : `Show less`}
                 </button>
-                <form className={styles.contactForm}>
+                { showContact ?
+                <form className={`${styles.contactForm} ${styles.showForm}`}>
                     <div className={styles.contactWrapper}>
                         <input className={styles.contactInput} type="text" id="name" placeholder=' ' required />
                         <label className={styles.contactLabel}  htmlFor="name">Name</label>
@@ -48,7 +49,7 @@ const Contact = () => {
                         <input className={styles.contactInput} type="text" id="message" placeholder=' ' required />
                         <label className={styles.contactLabel} htmlFor="message">Message</label>
                     </div>
-                </form>
+                </form> : null}
             </motion.aside>
         </section>
     )
