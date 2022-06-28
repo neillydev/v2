@@ -120,6 +120,7 @@
 .aboutTechnologies {
     columns: 2;
     list-style: none;
+    font-size: 16px;
 }
 
 .aboutTechnologies > li::before {
