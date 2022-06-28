@@ -1,10 +1,11 @@
 import React from 'react';
 
 import styles from '../../styles/CodeEditor.module.css';
+import heroStyles from '../../styles/Hero.module.css';
 
 const CodeEditor = () => {
   return (
-    <div className={styles.codeContainer}>
+    <div className={`${styles.codeContainer} ${heroStyles.heroItem4}`}>
       <div className={styles.codeHeader}>
         <span className={styles.codeCommandPre}>
           $
