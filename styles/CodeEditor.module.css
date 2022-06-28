@@ -55,12 +55,14 @@
 }
 
 .codeCommandPre {
-    color: rgb(113, 86, 217);
+    color: rgb(204 161 255);
+    /* color: rgb(113, 86, 217); */
     font-size: 16px;
 }
 
 .var {
-    color: rgb(113, 86, 217);
+    color: rgb(204 161 255);
+    /* color: rgb(113, 86, 217); */
 }
 
 .mockControls {
