@@ -5,4 +5,4 @@
   Built with <a href="https://reactjs.org/" target="_blank">React and NextJS</a>
 </p>
 
-![v2](https://user-images.githubusercontent.com/51303046/173260747-56278595-3b0d-40be-9685-72ac72b225a4.png)
+![v2](https://i.gyazo.com/2974b0b28203f3e56344c060479e64ef.png)
