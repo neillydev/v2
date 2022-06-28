@@ -11,6 +11,11 @@
     text-align: center;
 }
 
+.contactContainer > p {
+    color: #ccd6f6;
+    font-size: 18px;
+}
+
 .contactHeader {
     display: flex;
     visibility: visible;

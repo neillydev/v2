@@ -51,7 +51,7 @@
     -webkit-box-align: center;
     align-items: center;
     position: relative;
-    margin: 10px 0px 40px;
+    margin: 10px 0px 20px;
     /* width: 100%; */
     font-size: clamp(26px,5vw,32px);
     white-space: nowrap;
@@ -60,6 +60,11 @@
 .aboutBody {
     display: flex;
     flex-direction: column;
+}
+
+.aboutBody > p {
+    color: #ccd6f6;
+    font-size: 18px;
 }
 
 .aboutImg {
