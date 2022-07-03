@@ -44,10 +44,10 @@ const Experience = () => {
                         'Refactored the API, frontend design, and database management for Exact Staff and My Exact Jobs.'
                     ]} />
                     :
-                    <ExperienceCard title='Freelance' duration='Jan. 2017 - May 2022' achievements={[
-                        'Engineered and maintained various web applications that provides staffing to numerous clients.',
-                        'Utilize various frontend/backend frameworks and query languages such as React, NextJS, NodeJS, GraphQL, Prisma, SQL, and PostgreSQL.',
-                        'Refactored the API, frontend design, and database management for Exact Staff and My Exact Jobs.'
+                    <ExperienceCard title='Software Developer - Freelance' duration='Jan. 2017 - May 2022' achievements={[
+                        'Developed reliable web applications for various clients ',
+                        'Worked directly with clients to ensure project requirements were met',
+                        'Developed personal web applications in React, NodeJS, and PostgreSQL'
                     ]}  />
                 }
                 </div>
