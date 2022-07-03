@@ -44,6 +44,26 @@
     background-color: rgba(203, 161, 255, 0.20);
 }
 
+.contactSubmitBtn {
+    color: rgb(204 161 255);
+    background-color: rgb(108 50 179 / 29%);
+    border: 1px solid rgb(204 161 255);
+    border-radius: 4px;
+    padding: 1.25rem 1.75rem;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    align-self: flex-end;
+}
+
+.contactSubmitBtn:hover {
+    background-color: rgba(203, 161, 255, 0.20);
+}
+
 .contactForm {
     display: flex;
     flex-direction: column;
