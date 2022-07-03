@@ -95,18 +95,42 @@
     ;
 }
 
-@media (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     .codeContainer {
-        width: 30rem;
-        height: 18rem;
+        width: 34rem;
+        height: 17rem;
     }
     .codeHeader {
+        padding-bottom: 0;
         height: 3rem;
     }
     .codeCommandPre{
         font-size: 15px;
     }
     .code{
-        font-size: 11px;
+        font-size: 10.5px;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .codeContainer {
+        width: 32rem;
+        height: 16rem;
+    }
+    .codeHeader {
+        padding-bottom: 0;
+        height: 3rem;
+    }
+    .codeCommandPre{
+        font-size: 13px;
+    }
+    .code{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .codeContainer {
+        display: none;
     }
 }
