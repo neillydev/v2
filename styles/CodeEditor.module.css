@@ -112,7 +112,7 @@
     }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1250px) {
     .codeContainer {
         width: 32rem;
         height: 16rem;
@@ -129,7 +129,7 @@
     }
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1150px) {
     .codeContainer {
         display: none;
     }

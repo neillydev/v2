@@ -100,7 +100,7 @@
     }
 }
 
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 1250px) {
     .heroIntro {
         font-size: clamp(16px, 5vw, 15px);
     }
@@ -118,7 +118,7 @@
 }
 
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1150px) {
     .heroItemContainer {
         margin-right: 0;
         max-width: 650px;
