@@ -1,10 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent, FormEvent } from 'react';
 import { motion } from "framer-motion";
+import { send } from 'emailjs-com';
 
 import styles from '../../styles/Contact.module.css';
 
 const Contact = () => {
     const [showContact, setShowContact] = useState(false);
+    const [formContent, setFormContent] = useState({
+        from_name: '',
+        message: '',
+        reply_to: ''
+    });
+
+    const handleFormSubmit = (e: FormEvent) => {
+        e.preventDefault();
+        send(process.env.NEXT_PUBLIC_SERVICE_ID ? process.env.NEXT_PUBLIC_SERVICE_ID : '', process.env.NEXT_PUBLIC_TEMPLATE_ID ? process.env.NEXT_PUBLIC_TEMPLATE_ID : '', formContent, process.env.NEXT_PUBLIC_USER_ID);
+        setFormContent({
+            from_name: '',
+            message: '',
+            reply_to: ''
+        });
+    };
+
+    const handleFormChange = (e: any) => {
+        setFormContent({ ...formContent, [e.target.name]: e.target.value });
+    };
 
     const handleContactBtn = () => {
         setShowContact(!showContact);
@@ -35,21 +55,24 @@ const Contact = () => {
                 <button className={styles.contactBtn} onClick={handleContactBtn}>
                     {!showContact ? `Say Hi` : `Show less`}
                 </button>
-                { showContact ?
-                <form className={`${styles.contactForm} ${styles.showForm}`}>
-                    <div className={styles.contactWrapper}>
-                        <input className={styles.contactInput} type="text" id="name" placeholder=' ' required />
-                        <label className={styles.contactLabel}  htmlFor="name">Name</label>
-                    </div>
-                    <div className={styles.contactWrapper}>
-                        <input className={styles.contactInput}type="text" id="email" placeholder=' ' required />
-                        <label className={styles.contactLabel} htmlFor="email">Email</label>
-                    </div>
-                    <div className={styles.contactWrapper}>
-                        <input className={styles.contactInput} type="text" id="message" placeholder=' ' required />
-                        <label className={styles.contactLabel} htmlFor="message">Message</label>
-                    </div>
-                </form> : null}
+                {showContact ?
+                    <form className={`${styles.contactForm} ${styles.showForm}`} onSubmit={handleFormSubmit}>
+                        <div className={styles.contactWrapper}>
+                            <input className={styles.contactInput} type="text" name="from_name" placeholder=' ' required value={formContent.from_name} onChange={handleFormChange} />
+                            <label className={styles.contactLabel} htmlFor="name">Name</label>
+                        </div>
+                        <div className={styles.contactWrapper}>
+                            <input className={styles.contactInput} type="text" name="reply_to" placeholder=' ' required value={formContent.reply_to} onChange={handleFormChange} />
+                            <label className={styles.contactLabel} htmlFor="email">Email</label>
+                        </div>
+                        <div className={styles.contactWrapper}>
+                            <input className={styles.contactInput} type="text" name="message" placeholder=' ' required value={formContent.message} onChange={handleFormChange} />
+                            <label className={styles.contactLabel} htmlFor="message">Message</label>
+                        </div>
+                        <button className={styles.contactSubmitBtn}>
+                            Submit
+                        </button>
+                    </form> : null}
             </motion.aside>
         </section>
     )
