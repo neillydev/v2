@@ -94,3 +94,19 @@
     background-color: rgba(16, 185, 129, 1);
     ;
 }
+
+@media (max-width: 1366px) {
+    .codeContainer {
+        width: 30rem;
+        height: 18rem;
+    }
+    .codeHeader {
+        height: 3rem;
+    }
+    .codeCommandPre{
+        font-size: 15px;
+    }
+    .code{
+        font-size: 11px;
+    }
+}
