@@ -73,3 +73,15 @@
 .navItemContainer:hover {
     color: rgb(204 161 255);
 }
+
+@media screen and (max-width: 1240px) {
+    .navItemContainer {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .navItemContainer {
+        font-size: 12px;
+    }
+}
