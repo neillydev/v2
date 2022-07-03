@@ -26,7 +26,7 @@ const About = () => {
                     </div>
                     <div className={styles.aboutBody}>
                         <p>Hi! My name is Vernon Neilly, and programming is my passion! From a young age, I've taken an interest in the internet; developing a burning desire to understand how everything worked under the hood.</p>
-                        <p>From humble beginnings, creating websites with HTML, Javascript, and CSS, to building plugins and web applications for various clients, to working with a company, I've had the privilege to procure valuable experience from various different avenues.</p>
+                        <p>From humble beginnings, creating websites with HTML, Javascript, and CSS, to building plugins and web applications for various clients as a freelancer, to being apart of a development team within a corporate landscape. I've acquired valuable experience from various different avenues.</p>
                         <p>Below are technologies I work with consistently:</p>
                         <ul className={styles.aboutTechnologies}>
                             <li>JavaScript/Typescript</li>
