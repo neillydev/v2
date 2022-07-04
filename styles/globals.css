@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    display: flex;
+    min-width: fit-content;
     background-color: #0a192f;
     color: #edf2ff;
     background-size: 360px;
