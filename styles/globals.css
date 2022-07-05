@@ -135,7 +135,7 @@ ul {
     border-radius: 10px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
     body {
         background: -webkit-linear-gradient(rgb(28, 21, 60) 27%, hsl(253deg 60% 29%));
     background-color: #0a192f;

@@ -5,3 +5,11 @@
     padding: 0px 150px;
     margin: 0px auto;
 }
+
+@media screen and (max-width: 520px) {
+    .mainContainer {
+        max-width: none;
+        min-height: none;
+        padding: 0;
+    }
+} 

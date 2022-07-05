@@ -135,3 +135,38 @@
     padding-left: 1.3rem;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
+
+@media screen and (max-width: 900px) {
+    .aboutContainer {
+        max-width: none;
+        flex-direction: column;
+    }
+
+    .aboutHeader {
+        justify-content: center;
+    }
+
+    .aboutHeader::after {
+        display: none;
+    }
+
+    .aboutBody {
+        text-align: center;
+        width: 90vw;
+    }
+
+    .aboutBody > p {
+        font-size: 12px;
+    }
+
+    .aboutImg {
+        max-width: none;
+        width: 40vw;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .aboutTechnologies {
+        font-size: 12px;
+    }
+} 

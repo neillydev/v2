@@ -135,5 +135,21 @@
     }
 }
 
-/* @media screen and (max-width: 930px) {
-} */
+@media screen and (max-width: 500px) {
+    .heroItemContainer {
+        max-width: none;
+        width: 90vw;
+    }
+
+    .heroIntro {
+        font-size: clamp(14px, 5vw, 14px);
+    }
+
+    .heroHeader {
+        font-size: clamp(30px, 8vw, 65px);
+    }
+    
+    .heroItem4 {
+        font-size: 14px;
+    }
+}

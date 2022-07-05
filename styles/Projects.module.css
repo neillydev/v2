@@ -208,3 +208,17 @@
     transition-timing-function: (.17,.67,.83,.67); */
 }
 
+@media screen and (max-width: 900px) {
+    .projItemContainer {
+        justify-content: none;
+        align-items: none;
+        max-width: none;
+    }
+
+    .projCardContainer {
+        align-items: center;
+        margin-left: none;
+        position: absolute;
+        width: 100%;
+    }
+} 
