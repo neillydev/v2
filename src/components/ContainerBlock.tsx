@@ -20,6 +20,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
     <div>
       <Head>
         <title>{meta.title}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
         <meta
