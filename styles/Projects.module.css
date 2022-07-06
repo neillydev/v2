@@ -272,6 +272,7 @@
         width: 5rem;
         -webkit-flex: 0;
         flex-shrink: 0;
+        margin-bottom: 0;
     }
 
     .projCard {
@@ -295,5 +296,9 @@
 
     .projList {
         display: none;
+    }
+
+    .projTechnologies {
+        margin-top: 10rem;
     }
 }
