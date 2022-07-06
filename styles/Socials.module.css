@@ -41,3 +41,9 @@
     margin-bottom: 10px;
     fill: rgb(239, 115, 255);
 }
+
+@media screen and (max-width: 900px){ 
+    .socialsList::after {
+        height: 50px;
+    }
+}
