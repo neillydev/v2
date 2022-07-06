@@ -183,7 +183,7 @@
     position: relative;
 }
 
-.projItemWrapper > span:hover {
+.projItemWrapper>span:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -209,12 +209,17 @@
 }
 
 @media screen and (max-width: 900px) {
+
     .projContainer {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         max-width: none;
     }
 
     .projHeader {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -223,13 +228,19 @@
     }
 
     .projItemContainer {
+        -webkit-box-pack: none;
+        -ms-flex-pack: none;
         justify-content: none;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         max-width: none;
         width: auto;
     }
 
     .projCardContainer {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         margin-left: none;
         position: absolute;
@@ -238,7 +249,8 @@
         margin-left: 0;
     }
 
-    .projItemWrapper, .projItem {
+    .projItemWrapper,
+    .projItem {
         max-width: none;
         max-height: none;
 
@@ -256,7 +268,11 @@
     }
 
     .projCard {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         width: 18rem;
         height: 5rem;
@@ -271,4 +287,4 @@
     .projList {
         display: none;
     }
-} 
+}
