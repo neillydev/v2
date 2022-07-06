@@ -209,10 +209,24 @@
 }
 
 @media screen and (max-width: 900px) {
+    .projContainer {
+        align-items: center;
+        max-width: none;
+    }
+
+    .projHeader {
+        justify-content: center;
+    }
+
+    .projHeader::after {
+        content: none;
+    }
+
     .projItemContainer {
         justify-content: none;
-        align-items: none;
+        align-items: center;
         max-width: none;
+        width: auto;
     }
 
     .projCardContainer {
@@ -220,5 +234,41 @@
         margin-left: none;
         position: absolute;
         width: 100%;
+        z-index: 1;
+        margin-left: 0;
+    }
+
+    .projItemWrapper, .projItem {
+        max-width: none;
+        max-height: none;
+
+    }
+
+    .projItemWrapper>span {
+        width: 300px;
+        height: 218px;
+    }
+
+    .projCardHeader {
+        font-size: 20px;
+        text-align: center;
+        width: 5rem;
+    }
+
+    .projCard {
+        display: flex;
+        align-items: center;
+        width: 18rem;
+        height: 5rem;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .projItemOverlay {
+        opacity: 0.85;
+    }
+
+    .projList {
+        display: none;
     }
 } 
