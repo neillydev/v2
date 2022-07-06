@@ -236,6 +236,8 @@
         align-items: center;
         max-width: none;
         width: auto;
+        -webkit-flex: 0;
+        flex-shrink: 0;
     }
 
     .projCardContainer {
@@ -247,6 +249,8 @@
         width: 100%;
         z-index: 1;
         margin-left: 0;
+        -webkit-flex: 0;
+        flex-shrink: 0;
     }
 
     .projItemWrapper,
@@ -265,6 +269,8 @@
         font-size: 20px;
         text-align: center;
         width: 5rem;
+        -webkit-flex: 0;
+        flex-shrink: 0;
     }
 
     .projCard {
@@ -278,6 +284,8 @@
         height: 5rem;
         font-size: 14px;
         text-align: center;
+        -webkit-flex: 0;
+        flex-shrink: 0;
     }
 
     .projItemOverlay {
