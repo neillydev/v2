@@ -63,7 +63,7 @@
 }
 
 .aboutBody > p {
-    color: #ccd6f6;
+    /* color: #ccd6f6; */
     font-size: 18px;
 }
 
@@ -120,7 +120,7 @@
 .aboutTechnologies {
     columns: 2;
     list-style: none;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .aboutTechnologies > li::before {
