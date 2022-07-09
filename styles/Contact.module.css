@@ -149,4 +149,8 @@
     .contactSubmitBtn {
         align-self: center;
     }
+
+    .contactContainer {
+        margin: 0px 26px 100px;
+    }
 }
