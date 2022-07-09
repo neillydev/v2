@@ -140,3 +140,13 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 900px) {
+    .contactForm {
+        width: 18rem;
+    }
+
+    .contactSubmitBtn {
+        align-self: center;
+    }
+}
