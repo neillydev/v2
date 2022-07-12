@@ -1,0 +1,28 @@
+.projCardContainer {
+    display: flex;
+    width: 70%;
+    height: auto;
+    background-color: rgb(113, 86, 217);
+    border-radius: 14px;
+}
+
+.projCardWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.projCardHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.projCardImg {
+    width: 100%;
+    height: 60%;
+    border-radius: 14px;
+}
+
+.projCardBody {
+    display: flex;
+    justify-content: center;
+}

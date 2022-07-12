@@ -241,17 +241,17 @@
     }
 
     .projCardContainer {
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        margin-left: none;
+        margin-left: 0;
         position: absolute;
         width: 100%;
         z-index: 1;
-        margin-left: 0;
         -webkit-flex: 0;
         flex-shrink: 0;
+        top: 40%;
     }
 
     .projItemWrapper,
@@ -267,6 +267,8 @@
     }
 
     .projCardHeader {
+        position: absolute;
+        top: -25%;
         font-size: 20px;
         text-align: center;
         width: 5rem;
@@ -276,18 +278,21 @@
     }
 
     .projCard {
+        position: relative;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center;
+        /* align-items: center; */
         width: 18rem;
-        height: 5rem;
+        /* height: 5rem; */
         font-size: 14px;
         text-align: center;
         -webkit-flex: 0;
         flex-shrink: 0;
+        margin: 0;
+
     }
 
     .projItemOverlay {
@@ -299,6 +304,7 @@
     }
 
     .projTechnologies {
-        margin-top: 10rem;
+        /* margin-top: 10rem; */
+        margin-top: 0;
     }
 }
