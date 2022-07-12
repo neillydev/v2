@@ -1,0 +1,17 @@
+.hamburgerContainer {
+    display: none;
+}
+
+.hamburgerContainer span {
+    display: block;
+    margin-top: 0.25rem;
+    width: 2rem;
+    height: 2px;
+    background-color: rgb(113, 86, 217);
+}
+
+@media screen and (max-width: 930px) {
+    .hamburgerContainer {
+        display: block;
+    }
+}

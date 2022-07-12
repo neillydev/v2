@@ -5,6 +5,7 @@ import { useScrollPosition } from "../hooks/useScrollPosition";
 
 import styles from '../../styles/NavBar.module.css';
 import NavItem from "./NavItem";
+import Hamburger from "./Hamburger";
 
 
 const classNames = (...classes: any) => {
@@ -23,6 +24,7 @@ export default function NavBar(){
 
                     </a>
                 </div>
+                <Hamburger />
                 <div className={styles.navList}>
                     <ol>
                         <NavItem destination="/#about" itemText="About" />

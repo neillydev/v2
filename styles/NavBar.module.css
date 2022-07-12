@@ -81,6 +81,15 @@
 }
 
 @media screen and (max-width: 930px) {
+    .navList {
+        display: none;
+    }
+
+    .navHeader {
+        padding: 0 35px;
+        height: 70px;
+    }
+
     .navItemContainer {
         font-size: 12px;
     }
