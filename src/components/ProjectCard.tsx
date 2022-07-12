@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from '../../styles/Projects.module.css';
 
@@ -7,6 +7,8 @@ type ProjectCardProps = {
 }
 
 const ProjectCard = ({ title, url, description, technologies, img }: ProjectCardProps) => {
+    const [selected, setSelected] = useState(0);
+    
     return (
         <>
             <div className={styles.projItem}>
@@ -33,6 +35,10 @@ const ProjectCard = ({ title, url, description, technologies, img }: ProjectCard
                         technologies.map((technology: string) => <li>{technology}</li>)
                     }
                 </ul>
+                <span className={styles.projScroller}>
+                    <span className={`${selected === 0 ? styles.projSelected : ''}`} onClick={() => setSelected(0)} />
+                    <span className={`${selected === 1 ? styles.projSelected : ''}`} onClick={() => setSelected(1)} />
+                </span>
             </div>
         </>
     )
