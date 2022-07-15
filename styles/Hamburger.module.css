@@ -25,6 +25,21 @@
         display: block;
     }
 
+    .hamburgerClose {
+        z-index: 101;
+        transform: rotate(180deg);
+    }
+
+    .hamburgerClose span:nth-child(1){
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    .hamburgerClose span:nth-child(2){
+        opacity: 0;
+    }
+    .hamburgerClose span:nth-child(3){
+        transform: rotate(-45deg) translate(4px, -4px);
+    }
+
     .hamburgerMenu {
         position: absolute;
         z-index: 100;

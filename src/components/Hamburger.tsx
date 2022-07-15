@@ -15,7 +15,7 @@ const Hamburger = () => {
   };
 
   return (
-    <div className={styles.hamburgerContainer} onClick={handleHamburger}>
+    <div className={`${styles.hamburgerContainer} ${navOpen ? styles.hamburgerClose : '' }`} onClick={handleHamburger}>
         <span></span>
         <span></span>
         <span></span>
