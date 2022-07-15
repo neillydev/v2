@@ -1,3 +1,13 @@
+@keyframes hamburgerOpen {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 100vh;
+    }
+}
+
 .hamburgerContainer {
     display: none;
 }
@@ -13,5 +23,16 @@
 @media screen and (max-width: 930px) {
     .hamburgerContainer {
         display: block;
+    }
+
+    .hamburgerMenu {
+        position: absolute;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(113, 86, 217);
+        opacity: 0.75;
+        overflow:hidden;
+        animation: hamburgerOpen 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
 }
