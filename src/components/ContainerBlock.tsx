@@ -2,12 +2,15 @@ import React from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import NavBar from './NavBar';
+import { useNav } from "../context/NavContext";
 
 import styles from '../../styles/main.module.css';
 import Socials from "./Socials";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function ContainerBlock({ children, ...customMeta }: any) {
   const router = useRouter();
+  const navOpen = useNav();
 
   const meta = {
     title: "Vernon Neilly - Full Stack Developer",
@@ -46,6 +49,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         )}
       </Head>
       <div className="containerBlock">
+        {navOpen ? <HamburgerMenu /> : null}
         <NavBar />
         <Socials />
         <div className="mainContent">
