@@ -23,7 +23,7 @@
 }
 
 .hamburgerContainer span {
-    display: block;
+    display: none;
     width: 2rem;
     height: 3px;
     margin-top: 0.25rem;
@@ -31,11 +31,23 @@
     transition: all 100ms ease-in-out;
 }
 
+.hamburgerMenu {
+    display: none;
+}
+
 @media screen and (max-width: 930px) {
     .hamburgerContainer {
         display: block;
     }
 
+    .hamburgerContainer span {
+        display: block;
+    }
+
+    .hamburgerMenu {
+        display: block;
+    }
+    
     .hamburgerClose {
         z-index: 101;
     }
@@ -75,12 +87,12 @@
     }
 
     .hamburgerOpen {
-        animation: hamburgerOpen 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards
+        animation: hamburgerOpen 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
     }
 
-    .hamburgerMenuClose {
+    /* .hamburgerMenuClose {
         animation: hamburgerClose 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
-    }
+    } */
     
     .hamburgerWrapper {
         display: flex;

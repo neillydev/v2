@@ -6,7 +6,7 @@ const HamburgerMenu = () => {
   const navOpen = useNav();
 
   return (
-    <div className={`${styles.hamburgerMenu} ${navOpen ? styles.hamburgerOpen : styles.hamburgerMenuClose }`}>
+    <div className={`${styles.hamburgerMenu} ${navOpen ? styles.hamburgerOpen : '' }`}>
       <div className={styles.hamburgerWrapper}>
         <div className={styles.hamburgerItem}>
           <h1>About</h1>

@@ -50,7 +50,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
       </Head>
       <div className="containerBlock">
         <NavBar />
-        <HamburgerMenu />
+        {navOpen ? <HamburgerMenu /> : null}
         <Socials />
         <div className="mainContent">
             <main className={styles.mainContainer}>
