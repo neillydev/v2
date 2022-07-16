@@ -1,5 +1,5 @@
 import { AppProps } from 'next/app';
-
+import "regenerator-runtime/runtime";
 import '../../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
