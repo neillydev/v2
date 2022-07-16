@@ -1,17 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useNav, useNavUpdate } from "../context/NavContext";
-import { useScrollPrevent } from "../hooks/useScrollPrevent";
 
 import styles from '../../styles/Hamburger.module.css';
 
 const Hamburger = () => {
   const navOpen = useNav();
   const toggleNav = useNavUpdate();
-  const [allowScroll, blockScroll] = useScrollPrevent();
 
   const handleHamburger = () => {
     toggleNav();
-    !navOpen ? allowScroll() : blockScroll();
   };
 
   return (

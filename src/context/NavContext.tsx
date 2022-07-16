@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState } from "react";
+import { useScrollPrevent } from "../hooks/useScrollPrevent";
 
 const NavContext = createContext(false);
 const NavUpdateContext = createContext<() => void>(() => {});
@@ -13,9 +14,11 @@ export function useNavUpdate(){
 
 export function NavProvider({ children }: any) {
     const [navOpen, setNavOpen] = useState(false);
+    const [allowScroll, blockScroll] = useScrollPrevent();
 
     function toggleNav() {
         setNavOpen((prev: boolean) => !prev)
+        !navOpen ? allowScroll() : blockScroll();
     }
 
     return (
