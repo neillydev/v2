@@ -1,5 +1,4 @@
-import React from "react";
-import Link from "next/link";
+import React, { useEffect } from "react";
 import { useRouter } from "next/router";
 import { useScrollPosition } from "../hooks/useScrollPosition";
 
@@ -11,10 +10,35 @@ const classNames = (...classes: any) => {
     return classes.filter(Boolean).join('');
 }
 
+type NavProps = {
+    refs: any
+}
 
-export default function NavBar(){
+export default function NavBar({ refs }: NavProps) {
     const router = useRouter();
     const scrollPosition = useScrollPosition();
+    useEffect(() => {
+        switch (router.asPath) {
+            case "/#about":
+                scrollSmoothHandler(refs.aboutRef);
+                break;
+            case "/#experience":
+                scrollSmoothHandler(refs.experienceRef);
+                break;
+            case "/#projects":
+                scrollSmoothHandler(refs.projectsRef);
+                break;
+            case "/#contact":
+                scrollSmoothHandler(refs.contactRef);
+                break;
+            default:
+                break;
+        }
+    }, [router.asPath, refs]);
+
+    const scrollSmoothHandler = (ref: any) => {
+        ref.current.scrollIntoView({ behavior: "smooth" });
+    };
 
     return (
         <header className={`${styles.navHeader} ${scrollPosition > 0 ? (scrollPosition > 125 ? styles.navHeaderScrolled : styles.navHeaderScrolling) : ''}`}>
