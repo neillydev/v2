@@ -8,6 +8,16 @@
     }
 }
 
+@keyframes hamburgerClose {
+    from {
+        height: 100vh;
+    }
+
+    to {
+        height: 0;
+    }
+}
+
 .hamburgerContainer {
     display: none;
 }
@@ -58,10 +68,33 @@
         position: absolute;
         z-index: 100;
         width: 100vw;
-        height: 100vh;
+        height: 0;
         background-color: rgb(113, 86, 217);
-        opacity: 0.75;
+        opacity: 0.95;
         overflow: hidden;
-        animation: hamburgerOpen 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    .hamburgerOpen {
+        animation: hamburgerOpen 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards
+    }
+
+    .hamburgerMenuClose {
+        animation: hamburgerClose 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards;
+    }
+    
+    .hamburgerWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8rem 0;
+    }
+
+    .hamburgerItem {
+        margin: 1rem 0;
+    }
+    .hamburgerItem h1 {
+        font-weight: 600;
+        font-size: 2rem;
+        color: #fff;
     }
 }
