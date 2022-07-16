@@ -213,21 +213,22 @@
     display: none;
     width: 100%;
     height: 10px;
-    border-bottom: 3px solid rgb(113, 86, 217);
 }
 
 .projScroller span {
-    display: none;
-    position: absolute;
     bottom: 0;
-    width: 50%;
     height: 3px;
-    background-color: rgb(204 161 255);
+    background-color: rgb(113, 0, 252);
     border-radius: 4px;
 }
 
 .projSelected {
     display: block !important;
+    background-color: rgb(204 161 255) !important;
+}
+
+.projScrollItem {
+    width: 50%;
 }
 
 
@@ -235,7 +236,7 @@
 @media screen and (max-width: 900px) {
 
     .projScroller {
-        display: block;
+        display: flex;
     }
 
     .projContainer {
