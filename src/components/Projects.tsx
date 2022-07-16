@@ -41,12 +41,16 @@ const Projects = () => {
                             description="Live short-form video-based social media app that allows users to create, watch, and share videos"
                             technologies={["React", "Node JS", "PostgreSQL"]}
                             img="https://camo.githubusercontent.com/93f69877443045fe783bbc15a7746137eb6d30500a8fd2d5ce783db04b2f8dcd/68747470733a2f2f692e6779617a6f2e636f6d2f39376264323633623931666362633232393638373931356261303936396330622e706e67"
+                            selected={selected}
+                            setSelected={setSelected}
                         />
                         :
                         <ProjectCard title="Covid Maps" url="https://github.com/neillydev/covidmaps"
                             description="Real-time COVID-19 case map built with React"
                             technologies={["React", "Google Maps API"]}
                             img="https://camo.githubusercontent.com/4390730c6105344b42f84005ddb19ae85016f3354a1740e7812285a4463ceca2/68747470733a2f2f692e696d6775722e636f6d2f676c54516271552e706e67"
+                            selected={selected}
+                            setSelected={setSelected}
                         />
                 }
             </div>
@@ -55,4 +59,4 @@ const Projects = () => {
     )
 }
 
-export default Projects
+export default Projects;
