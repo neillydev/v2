@@ -120,6 +120,7 @@
     font-size: 13px;
     text-align: left;
     white-space: nowrap;
+    outline: none;
 }
 
 .projTabSelected {
