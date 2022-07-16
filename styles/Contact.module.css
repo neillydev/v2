@@ -109,7 +109,7 @@
     color: white;
     cursor: text;
     transition: all 50ms cubic-bezier(.17,.67,.83,.67);
-    background: rgb(43 30 98);
+    /* background: rgb(43 30 98); */
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 
@@ -126,6 +126,7 @@
     top: -0.7rem;
     font-size: 0.8rem;
     left: 0.8rem;
+    background: rgb(43 30 98);
 }
 
 .showForm{
