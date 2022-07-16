@@ -34,7 +34,7 @@
         transition: all 100ms ease-in-out;
         transform: rotate(45deg);
         transform-origin: top left;
-        width: 22px;
+        width: 21px;
     }
 
     .hamburgerClose span:nth-of-type(2) {
@@ -47,7 +47,7 @@
         transition: all 100ms ease-in-out;
         transform: rotate(-45deg);
         transform-origin: bottom left;
-        width: 22px;
+        width: 21px;
     }
 
     .hamburgerClose span {
