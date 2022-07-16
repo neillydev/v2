@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 import styles from '../../styles/NavBar.module.css';
@@ -10,9 +11,9 @@ type NavItemProps = {
 const NavItem = ({destination, itemText}: NavItemProps) => {
   return (
     <li className={styles.navItemContainer}>
-      <a href={destination}>
+      <Link href={destination}>
         {itemText}
-      </a>
+      </Link>
     </li>
   )
 };

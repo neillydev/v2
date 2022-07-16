@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import ProjectCard from './ProjectCard';
 import { motion } from "framer-motion";
 
 import styles from '../../styles/Projects.module.css';
 
-const Projects = () => {
+const Projects = forwardRef((props: any, ref: any) => {
     const [selected, setSelected] = useState(0);
 
     return (
-        <section className={styles.projSection}>
+        <section className={styles.projSection} ref={ref}>
         <motion.aside
             className={styles.projContainer}
             viewport={{ once: true }}
@@ -57,6 +57,6 @@ const Projects = () => {
             </motion.aside>
         </section>
     )
-}
+});
 
 export default Projects;

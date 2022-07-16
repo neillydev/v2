@@ -1,10 +1,10 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, forwardRef } from 'react';
 import { motion } from "framer-motion";
 import { send } from 'emailjs-com';
 
 import styles from '../../styles/Contact.module.css';
 
-const Contact = () => {
+const Contact = forwardRef((props: any, ref: any) => {
     const [showContact, setShowContact] = useState(false);
     const [formContent, setFormContent] = useState({
         from_name: '',
@@ -31,7 +31,7 @@ const Contact = () => {
     };
 
     return (
-        <section className={styles.contactSection}>
+        <section className={styles.contactSection} ref={ref}>
             <motion.aside
                 className={styles.contactContainer}
                 viewport={{ once: true }}
@@ -76,6 +76,6 @@ const Contact = () => {
             </motion.aside>
         </section>
     )
-}
+});
 
 export default Contact

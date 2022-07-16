@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { motion } from "framer-motion";
 
 import styles from '../../styles/About.module.css';
 
-const About = () => {
+const About = forwardRef((props: any, ref: any) => {
     return (
-        <section className={styles.aboutSection}>
+        <section className={styles.aboutSection} ref={ref}>
             <motion.aside
                 className={styles.aboutContainer}
                 viewport={{ once: true }}
@@ -48,6 +48,6 @@ const About = () => {
             </motion.aside>
         </section>
     )
-};
+});
 
 export default About;

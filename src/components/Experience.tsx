@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
+import React, { forwardRef, useState } from 'react';
 import { motion } from "framer-motion";
 
 import styles from '../../styles/Experience.module.css';
 import ExperienceCard from './ExperienceCard';
 
-const Experience = () => {
+const Experience = forwardRef((props: any, ref: any) => {
     const [selected, setSelected] = useState(0);
 
     return (
-        <section className={styles.experienceSection}>
+        <section className={styles.experienceSection} ref={ref}>
         <motion.aside
             className={styles.experienceContainer}
             viewport={{ once: true }}
@@ -55,6 +55,6 @@ const Experience = () => {
             </motion.aside>
         </section>
     )
-};
+});
 
 export default Experience;
