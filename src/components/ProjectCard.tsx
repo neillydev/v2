@@ -3,11 +3,10 @@ import React, { useState } from 'react';
 import styles from '../../styles/Projects.module.css';
 
 type ProjectCardProps = {
-    title: string, url: string, description: string, technologies: string[], img: string
+    title: string, url: string, description: string, technologies: string[], img: string, selected: number, setSelected: React.Dispatch<React.SetStateAction<number>>
 }
 
-const ProjectCard = ({ title, url, description, technologies, img }: ProjectCardProps) => {
-    const [selected, setSelected] = useState(0);
+const ProjectCard = ({ title, url, description, technologies, img, selected, setSelected }: ProjectCardProps) => {
     
     return (
         <>
