@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useScrollPosition } from "../hooks/useScrollPosition";
@@ -7,10 +7,10 @@ import styles from '../../styles/NavBar.module.css';
 import NavItem from "./NavItem";
 import Hamburger from "./Hamburger";
 
-
 const classNames = (...classes: any) => {
     return classes.filter(Boolean).join('');
 }
+
 
 export default function NavBar(){
     const router = useRouter();

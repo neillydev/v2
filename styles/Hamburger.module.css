@@ -14,10 +14,11 @@
 
 .hamburgerContainer span {
     display: block;
-    margin-top: 0.25rem;
     width: 2rem;
-    height: 2px;
+    height: 3px;
+    margin-top: 0.25rem;
     background-color: rgb(113, 86, 217);
+    transition: all 100ms ease-in-out;
 }
 
 @media screen and (max-width: 930px) {
@@ -27,17 +28,30 @@
 
     .hamburgerClose {
         z-index: 101;
-        transform: rotate(180deg);
     }
 
-    .hamburgerClose span:nth-child(1){
-        transform: rotate(45deg) translate(5px, 5px);
+    .hamburgerClose span:nth-of-type(1) {
+        transition: all 100ms ease-in-out;
+        transform: rotate(45deg);
+        transform-origin: top left;
+        width: 22px;
     }
-    .hamburgerClose span:nth-child(2){
-        opacity: 0;
+
+    .hamburgerClose span:nth-of-type(2) {
+        transition: all 100ms ease-in-out;
+        transform-origin: center;
+        width: 0;
     }
-    .hamburgerClose span:nth-child(3){
-        transform: rotate(-45deg) translate(4px, -4px);
+
+    .hamburgerClose span:nth-of-type(3) {
+        transition: all 100ms ease-in-out;
+        transform: rotate(-45deg);
+        transform-origin: bottom left;
+        width: 22px;
+    }
+
+    .hamburgerClose span {
+        background-color: #fff;
     }
 
     .hamburgerMenu {
@@ -47,7 +61,7 @@
         height: 100vh;
         background-color: rgb(113, 86, 217);
         opacity: 0.75;
-        overflow:hidden;
+        overflow: hidden;
         animation: hamburgerOpen 0.175s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
 }
