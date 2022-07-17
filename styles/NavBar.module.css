@@ -56,11 +56,11 @@
 .navItemContainer {
     margin: 0px 5px;
     position: relative;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .navItemContainer a {
-    padding: 10px;
+    padding: 14px;
 }
 
 .navItemContainer a::before {
