@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { useNav, useNavUpdate } from "../context/NavContext";
-import { useScrollPrevent } from "../hooks/useScrollPrevent";
 
 import styles from '../../styles/Hamburger.module.css';
 
