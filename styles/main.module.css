@@ -6,6 +6,84 @@
     margin: 0px auto;
 }
 
+
+.svgDefs {
+	display: none;
+}
+
+.meteorShower {
+	z-index: -1;
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.meteor {
+	height: auto;
+	position: absolute;
+	left: -10vw;
+	top: -10vh;
+	z-index: -1;
+	transform: scaleX(-1);
+    background-color: rgb(255, 255, 255);
+    width: 2.75px;
+    height: 2.75px;
+    border-radius: 100px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	.meteor {
+		animation: shower 10s infinite;
+	}
+
+	.meteorOne {
+		left: 30vw;
+		animation-delay: 0ms;
+	}
+
+	.meteorTwo {
+		left: 57vw;
+		animation-delay: 9s;
+	}
+
+	.meteorThree {
+		left: 83vw;
+		animation-delay: 6s;
+	}
+
+	.meteorFour {
+		top: 13vh;
+		animation-delay: 22s;
+	}
+
+	.meteorFive {
+		top: 34vh;
+		animation-delay: 5s;
+	}
+
+	.meteorSix {
+		top: 67vh;
+		animation-delay: 14s;
+	}
+
+	@keyframes shower {
+		0% {
+			opacity: 0;
+			transform: scaleX(-1) translate(0, 0);
+		}
+		70% {
+			opacity: 0.4;
+			transform: scaleX(-1) translate(0, 0);
+		}
+		100% {
+			opacity: 1;
+			transform: scaleX(-1) translate(-101vw, 101vmax);
+		}
+	}
+}
+
 @media screen and (max-width: 520px) {
     .mainContainer {
         overflow-x: hidden;
@@ -14,3 +92,4 @@
         padding: 0;
     }
 } 
+

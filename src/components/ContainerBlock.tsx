@@ -7,6 +7,7 @@ import { useNav } from "../context/NavContext";
 import styles from '../../styles/main.module.css';
 import Socials from "./Socials";
 import HamburgerMenu from "./HamburgerMenu";
+import Main from "./Main";
 
 export default function ContainerBlock({ children, ...customMeta }: any) {
   const router = useRouter();
@@ -52,6 +53,7 @@ export default function ContainerBlock({ children, ...customMeta }: any) {
         <NavBar refs={customMeta.refs}/>
         {navOpen ? <HamburgerMenu /> : null}
         <Socials />
+        <Main />
         <div className="mainContent">
             <main className={styles.mainContainer}>
               {children}
