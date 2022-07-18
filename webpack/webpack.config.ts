@@ -29,14 +29,14 @@ module.exports = {
                     }
                 ]
             },
-            {
+            /* {
                 test: /\.(png|jpe?g|gif)$/i,
                 use: [
                     {
                         loader: "file-loader"
                     }
                 ]
-            },
+            }, */
             {
                 test: /\.css$/i,
                 use: [
@@ -55,7 +55,7 @@ module.exports = {
                         },
                     },
                 ],
-            },
+            },{ test: /\.(jpg|png|gif|svg|pdf)$/, use: [ { loader: 'file-loader', options: { name: '[name].[ext]', outputPath: './assets/images/' } } ] },
         ]
     },
 

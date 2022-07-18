@@ -16,7 +16,10 @@
     "framer-motion": "^6.3.15",
     "next": "^12.1.6",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-burger-menu": "^3.0.8",
+    "react-dom": "^18.1.0",
+    "react-pdf": "^5.7.2",
+    "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -25,8 +28,11 @@
     "@babel/preset-typescript": "^7.17.12",
     "@svgr/webpack": "^6.2.1",
     "@types/react": "^18.0.9",
+    "@types/react-burger-menu": "^2.8.3",
     "@types/react-dom": "^18.0.5",
+    "@types/react-pdf": "^5.7.2",
     "babel-loader": "^8.2.5",
+    "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "svg-url-loader": "^7.1.1",
     "typescript": "^4.7.2",
