@@ -74,6 +74,23 @@
     color: rgb(204 161 255);
 }
 
+.resumeContainer {
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 14px;
+    color: rgb(204 161 255);
+    border-radius: 4px;
+    border: 1px solid rgb(113, 86, 217);
+    padding: 8px 18px;
+    margin: 0 10px;
+}
+
+.resumeContainer:hover {
+    background-color: rgba(112, 86, 217, 0.219);
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
 @media screen and (max-width: 1240px) {
     .navItemContainer {
         font-size: 14px;

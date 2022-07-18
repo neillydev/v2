@@ -55,6 +55,9 @@ export default function NavBar({ refs }: NavProps) {
                         <NavItem destination="/#experience" itemText="Experience" />
                         <NavItem destination="/#projects" itemText="Projects" />
                         <NavItem destination="/#contact" itemText="Contact" />
+                        <div className={styles.resumeContainer}>
+                            <a className={styles.resumeBtn} href="/vernon_neilly.pdf">Resume</a>
+                        </div>
                     </ol>
                 </div>
             </nav>
