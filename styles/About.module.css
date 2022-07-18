@@ -142,16 +142,11 @@
         flex-direction: column;
     }
 
-    .aboutHeader {
-        justify-content: center;
-    }
-
     .aboutHeader::after {
         display: none;
     }
 
     .aboutBody {
-        text-align: center;
         width: 90vw;
     }
 

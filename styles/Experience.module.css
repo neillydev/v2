@@ -36,14 +36,14 @@
     background-color: rgb(113, 86, 217);
 }
 
-.experienceHeader > h2 {
+.experienceHeader>h2 {
     display: flex;
     -webkit-box-align: center;
     align-items: center;
     position: relative;
     margin: 10px 0px 40px;
     /* width: 100%; */
-    font-size: clamp(26px,5vw,32px);
+    font-size: clamp(26px, 5vw, 32px);
     white-space: nowrap;
 }
 
@@ -64,7 +64,7 @@
     text-decoration: none;
     text-decoration-skip-ink: auto;
     position: relative;
-    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
     display: flex;
     -webkit-box-align: center;
     align-items: center;
@@ -74,7 +74,7 @@
     border-left: 2px solid #edf2ff;
     background-color: transparent;
     color: #edf2ff;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 13px;
     text-align: left;
     white-space: nowrap;
@@ -89,7 +89,7 @@
     position: relative;
     width: 100%;
     margin-left: 20px;
-    transition: all 0.2s cubic-bezier(.17,.67,.83,.67); 
+    transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
 }
 
 .experienceFadeOut {
@@ -108,26 +108,26 @@
     padding: 10px 5px;
 }
 
-.experienceBodyItem > p {
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+.experienceBodyItem>p {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 14px;
     margin-top: 0px;
 }
 
-.experienceBodyItem > ul {
+.experienceBodyItem>ul {
     padding: 0px;
     margin: 0px;
     font-size: 18px;
 }
 
-.experienceBodyItem > ul > li::before {
+.experienceBodyItem>ul>li::before {
     content: "▹";
     position: absolute;
     left: 0px;
     color: rgb(204 161 255);
 }
 
-.experienceBodyItem > ul > li {
+.experienceBodyItem>ul>li {
     position: relative;
     padding-left: 30px;
     margin-bottom: 10px;
@@ -139,10 +139,6 @@
         max-width: none;
     }
 
-    .experienceHeader {
-        justify-content: center;
-    }
-
     .experienceHeader::after {
         content: none;
     }
@@ -152,20 +148,24 @@
         font-size: 14px;
     }
 
-    .experienceBodyItem > ul {
+    .experienceBodyItem>ul {
         padding: 0;
         font-size: 12px;
     }
 
-    .experienceBodyItem > ul > li {
+    .experienceBodyItem>ul>li {
         padding-left: 0;
     }
 
-    .experienceBodyItem > ul > li::before {
+    .experienceBodyItem>ul>li::before {
         content: none;
     }
 
     .experienceBodyContent {
         margin-left: none;
+    }
+
+    .experienceContent {
+        width: 90vw;
     }
 }

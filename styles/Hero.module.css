@@ -135,15 +135,10 @@
     .heroItemContainer {
         margin-right: 0;
         max-width: 425px;
-        align-items: center;
     }
 
     .heroHeader {
         white-space: nowrap;
-    }
-
-    .heroItem4 {
-        text-align: center;
     }
 }
 
