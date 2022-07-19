@@ -74,7 +74,7 @@
     color: rgb(204 161 255);
 }
 
-.resumeContainer {
+.resumeBtn {
     cursor: pointer;
     background-color: transparent;
     text-decoration: none;
@@ -86,7 +86,7 @@
     margin: 0 10px;
 }
 
-.resumeContainer:hover {
+.resumeBtn:hover {
     background-color: rgba(112, 86, 217, 0.219);
     transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
