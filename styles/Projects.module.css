@@ -78,17 +78,13 @@
 }
 
 .projItemImg {
-    /* max-width: 579px;
-    max-height: 362px;
-    background-color: rgb(113, 86, 217);
-    border-radius: 6px; */
     height: 100%;
     margin: 0;
     max-width: fit-content;
     padding: 0;
     position: absolute;
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 4px;
 }
 
