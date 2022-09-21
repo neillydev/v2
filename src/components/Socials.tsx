@@ -16,7 +16,7 @@ const Socials = () => {
           </a>
         </li>
         <li className={styles.socialsListItem}>
-          <a href='https://www.linkedin.com/in/vernon-neilly-iii-2508a6190/' target='_blank' rel='noreferrer noopener' aria-label='LinkedIn'>
+          <a href='www.linkedin.com/in/neillydev' target='_blank' rel='noreferrer noopener' aria-label='LinkedIn'>
             <LinkedIn />
           </a>
         </li>
