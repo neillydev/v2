@@ -102,6 +102,17 @@
     list-style: none;
 }
 
+.projVisible {
+    display: none;
+}
+
+.projItem {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .projTab {
     text-decoration: none;
     text-decoration-skip-ink: auto;
@@ -231,8 +242,6 @@
     width: 50%;
 }
 
-
-
 @media screen and (max-width: 900px) {
 
     .projScroller {
@@ -300,10 +309,10 @@
         top: -25%;
         font-size: 20px;
         text-align: center;
-        width: 5rem;
         -webkit-flex: 0;
         flex-shrink: 0;
         margin-bottom: 0;
+        white-space: nowrap;
     }
 
     .projCard {
