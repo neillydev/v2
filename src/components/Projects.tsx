@@ -9,34 +9,45 @@ const Projects = forwardRef((props: any, ref: any) => {
 
     return (
         <section className={styles.projSection} ref={ref}>
-        <motion.aside
-            className={styles.projContainer}
-            viewport={{ once: true }}
-            whileInView={{ opacity: 1 }}
-            initial={{ opacity: 0 }}
-            exit={{
-                opacity: 1,
-            }}
-            transition={{
-                duration: 0.45,
-                delay: 0.4,
-            }}>
-            <div className={styles.projHeader}>
-                <h2>
-                    My Works
-                </h2>
-            </div>
-            <div className={styles.projItemContainer}>
-                <div className={styles.projList}>
-                    <button className={`${styles.projTab} ${selected === 0 ? styles.projTabSelected : ''}`} onClick={() => setSelected(0)}>
-                        <span className={styles.projText}>Waves</span>
-                    </button>
-                    <button className={`${styles.projTab} ${selected === 1 ? styles.projTabSelected : ''}`} onClick={() => setSelected(1)}>
-                        <span className={styles.projText}>Covid Maps</span>
-                    </button>
+            <motion.aside
+                className={styles.projContainer}
+                viewport={{ once: true }}
+                whileInView={{ opacity: 1 }}
+                initial={{ opacity: 0 }}
+                exit={{
+                    opacity: 1,
+                }}
+                transition={{
+                    duration: 0.45,
+                    delay: 0.4,
+                }}>
+                <div className={styles.projHeader}>
+                    <h2>
+                        My Works
+                    </h2>
                 </div>
-                {
-                    selected === 0 ?
+                <div className={styles.projItemContainer}>
+                    <div className={styles.projList}>
+                        <button className={`${styles.projTab} ${selected === 0 ? styles.projTabSelected : ''}`} onClick={() => setSelected(0)}>
+                            <span className={styles.projText}>GitMe</span>
+                        </button>
+                        <button className={`${styles.projTab} ${selected === 1 ? styles.projTabSelected : ''}`} onClick={() => setSelected(1)}>
+                            <span className={styles.projText}>Waves</span>
+                        </button>
+                        <button className={`${styles.projTab} ${selected === 2 ? styles.projTabSelected : ''}`} onClick={() => setSelected(2)}>
+                            <span className={styles.projText}>Covid Maps</span>
+                        </button>
+                    </div>
+                    <div className={selected === 0 ? styles.projItem : styles.projVisible}>
+                        <ProjectCard title="GitMe" url="https://github.com/neillydev/gitme"
+                            description="A modernized approach to developer portfolios"
+                            technologies={["React", "NextJS", "Typescript"]}
+                            img="https://i.imgur.com/45ELxNs.png"
+                            selected={selected}
+                            setSelected={setSelected}
+                        />
+                    </div>
+                    <div className={selected === 1 ? styles.projItem : styles.projVisible}>
                         <ProjectCard title="Waves" url="https://waves.neilly.dev"
                             description="Live short-form video-based social media app that allows users to create, watch, and share videos"
                             technologies={["React", "Node JS", "PostgreSQL"]}
@@ -44,7 +55,8 @@ const Projects = forwardRef((props: any, ref: any) => {
                             selected={selected}
                             setSelected={setSelected}
                         />
-                        :
+                    </div>
+                    <div className={selected === 2 ? styles.projItem : styles.projVisible}>
                         <ProjectCard title="Covid Maps" url="https://github.com/neillydev/covidmaps"
                             description="Real-time COVID-19 case map built with React"
                             technologies={["React", "Google Maps API"]}
@@ -52,8 +64,8 @@ const Projects = forwardRef((props: any, ref: any) => {
                             selected={selected}
                             setSelected={setSelected}
                         />
-                }
-            </div>
+                    </div>
+                </div>
             </motion.aside>
         </section>
     )
