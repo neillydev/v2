@@ -37,6 +37,7 @@ const ProjectCard = ({ title, url, description, technologies, img, selected, set
                 <span className={styles.projScroller}>
                     <span className={`${styles.projScrollItem} ${selected === 0 ? styles.projSelected : ''}`} onClick={() => setSelected(0)} />
                     <span className={`${styles.projScrollItem} ${selected === 1 ? styles.projSelected : ''}`} onClick={() => setSelected(1)} />
+                    <span className={`${styles.projScrollItem} ${selected === 2 ? styles.projSelected : ''}`} onClick={() => setSelected(2)} />
                 </span>
             </div>
         </>
