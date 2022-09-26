@@ -39,7 +39,7 @@ const Projects = forwardRef((props: any, ref: any) => {
                         </button>
                     </div>
                     <div className={selected === 0 ? styles.projItem : styles.projVisible}>
-                        <ProjectCard title="GitMe" url="https://github.com/neillydev/gitme"
+                        <ProjectCard title="GitMe" url="https://gitme.app"
                             description="A modernized approach to developer portfolios"
                             technologies={["React", "NextJS", "Typescript"]}
                             img="https://i.imgur.com/45ELxNs.png"
