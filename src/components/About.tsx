@@ -41,7 +41,7 @@ const About = forwardRef((props: any, ref: any) => {
                 <div className={styles.aboutImg}>
                     <div className={styles.aboutImgContainer}>
                         <picture>
-                            <img className={styles.aboutImgHeadshot} width="500" height="500" src="https://i.imgur.com/YHOjM4H.jpg" />
+                            <img className={styles.aboutImgHeadshot} width="500" height="500" src="https://avatars.githubusercontent.com/u/51303046?s=400&u=47d8c7a555c3df2c38299576a16a1b98802b3880&v=4" />
                         </picture>
                     </div>
                 </div>
