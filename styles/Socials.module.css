@@ -26,6 +26,10 @@
     background-color: #a8b2d1;
 }
 
+.socialsListItem {
+    transition: margin 0.2s cubic-bezier(.17,.67,.83,.67); 
+}
+
 .socialsListItem > a {
     padding: 8px;
 }
@@ -37,8 +41,12 @@
     transition: margin 0.2s cubic-bezier(.17,.67,.83,.67); 
 }
 
-.socialsListItem > a > svg:hover {
+.socialsListItem:hover {
+    
     margin-bottom: 10px;
+}
+
+.socialsListItem > a > svg:hover {
     fill: rgb(239, 115, 255);
 }
 
