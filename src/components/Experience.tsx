@@ -39,16 +39,16 @@ const Experience = forwardRef((props: any, ref: any) => {
                     
                     {selected === 0 ?
                     <ExperienceCard title='Web Developer @ Exact Staff' duration='May 2022 - Present' achievements={[
-                        'Fully engineered multiple APIs and Databases with NodeJS, GraphQL and PostgreSQL that controls 90% of all backend functionality.',
-                        'Pioneered and built a new Exact Staff website, employing a PostgreSQL, React, GraphQL, and NodeJS stack.',
-                        'Utilize various frontend/backend frameworks and query languages such as React, NextJS, NodeJS, GraphQL, Prisma, SQL, and PostgreSQL.',
+                        'Completely refactored an API, handling all backend functionality for associate onboarding, boosting development productivity by 60%, using NodeJS and GraphQL.',
+                        'Developed a system of automated text messaging-based reminders for a staffing company, promoting associate acquisition by 30%, utilizing NodeJS, PostgreSQL, and GraphQL.',
+                        'Engineered an administrator panel called Exact Admin using React, NextJS, GraphQL, NodeJS, and PostgreSQL, optimizing associate data fetching for all corporate staff.',
                         'Oversaw all development projects in a team including front-end, back-end, and SQL/PostgreSQL database management systems. ',
                     ]} />
                     :
-                    <ExperienceCard title='Software Developer - Freelance' duration='Jan. 2017 - May 2022' achievements={[
-                        'Developed reliable web applications for various clients ',
-                        'Worked directly with clients to ensure project requirements were met',
-                        'Developed personal web applications in React, NodeJS, and PostgreSQL'
+                    <ExperienceCard title='Software Developer - Freelance' duration='Jan. 2016 - May 2022' achievements={[
+                        'Created a backend API in NodeJS, Express, MySQL, and Typescript which handled authentication using JSON Web Tokens.',
+                        'Engineered and maintained an API for a referral system, resulting in thousands of customer acquisitions, leveraging NodeJS, Express, and PostgreSQL',
+                        'Developed Java plugins for multiple clients'
                     ]}  />
                 }
                 </div>
