@@ -41,7 +41,7 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <CodeEditor />
+        {/* <CodeEditor /> */}
       </div>
     </section>
   )
