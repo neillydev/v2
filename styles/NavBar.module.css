@@ -31,7 +31,7 @@
     position: relative;
     width: 100%;
     color: #ccd6f6;
-    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
 .logo {
