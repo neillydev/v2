@@ -44,8 +44,8 @@
 .heroIntro {
     margin: 0px 0px 10px 4px;
     color: rgb(204 161 255);
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: clamp(16px, 5vw, 18px);
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-weight: 400;
 }
 
