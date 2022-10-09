@@ -123,7 +123,7 @@
     border-left: 2px solid #edf2ff;
     background-color: transparent;
     color: #edf2ff;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     text-align: left;
     white-space: nowrap;
@@ -180,7 +180,7 @@
 .projTechnologies>li {
     margin: 0px 0px 5px 20px;
     color: rgb(238 234 255);
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-size: 14px;
     white-space: nowrap;
 }

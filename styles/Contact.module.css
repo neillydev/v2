@@ -31,7 +31,7 @@
     border: 1px solid rgb(204 161 255);
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-size: 18px;
     line-height: 1;
     text-decoration: none;
@@ -50,7 +50,7 @@
     border: 1px solid rgb(204 161 255);
     border-radius: 4px;
     padding: 1.25rem 1.75rem;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-size: 18px;
     line-height: 1;
     text-decoration: none;
@@ -110,7 +110,7 @@
     cursor: text;
     transition: all 50ms cubic-bezier(.17,.67,.83,.67);
     /* background: rgb(43 30 98); */
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
 }
 
 .contactInput:-webkit-autofill,

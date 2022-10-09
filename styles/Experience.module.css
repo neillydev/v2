@@ -74,7 +74,7 @@
     border-left: 2px solid #edf2ff;
     background-color: transparent;
     color: #edf2ff;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-size: 13px;
     text-align: left;
     white-space: nowrap;
@@ -109,7 +109,7 @@
 }
 
 .experienceBodyItem>p {
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
     font-size: 14px;
     margin-top: 0px;
 }
