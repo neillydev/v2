@@ -40,7 +40,7 @@ const Experience = forwardRef((props: any, ref: any) => {
                     {selected === 0 ?
                     <ExperienceCard title='Web Developer @ Exact Staff' duration='May 2022 - Present' achievements={[
                         'Completely refactored an API, handling all backend functionality for associate onboarding, boosting development productivity by 60%, using NodeJS and GraphQL.',
-                        'Developed a system of automated text messaging-based reminders for a staffing company, promoting associate acquisition by 30%, utilizing NodeJS, PostgreSQL, and GraphQL.',
+                        'Developed a system of automated text messaging-based reminders, promoting associate acquisition by 30%, utilizing NodeJS, PostgreSQL, and GraphQL.',
                         'Engineered an administrator panel called Exact Admin using React, NextJS, GraphQL, NodeJS, and PostgreSQL, optimizing associate data fetching for all corporate staff.',
                         'Oversaw all development projects in a team including front-end, back-end, and SQL/PostgreSQL database management systems. ',
                     ]} />
