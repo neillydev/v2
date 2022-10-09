@@ -146,6 +146,10 @@
 }
 
 @media screen and (max-width: 500px) {
+    .heroSection {
+        max-width: none;
+    }
+    
     .heroItemContainer {
         max-width: none;
         width: 90vw;
