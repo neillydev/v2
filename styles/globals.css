@@ -1,3 +1,15 @@
+@font-face {
+    font-family: 'Calibre';
+    src: url('../public/fonts/Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Calibre';
+    src: url('../public/fonts/Calibre-Regular-b0d4cbb1201155ddccc21d1b8059a670.woff2');
+    font-weight: 500;
+}
+
 html {
     box-sizing: border-box;
     width: 100%;
