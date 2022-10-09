@@ -23,9 +23,12 @@
 .heroSection {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: flex-start;
     -webkit-box-pack: center;
     -webkit-box-align: center;
+    margin: 0px auto;
+    max-width: 1000px;
 }
 
 .heroSectionContainer {
