@@ -59,6 +59,24 @@
     margin: 0px;
     list-style: none;
 }
+.experienceTitle {
+    display: flex;
+    
+}
+
+.experienceTitle svg {
+    margin-right: 1rem;
+    stroke: violet;
+}
+
+.companyName {
+    color: violet;
+}
+
+.companyName a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 .experienceTab {
     text-decoration: none;
