@@ -12,7 +12,13 @@ const Hero = () => {
     
     Below it should be the hoverable, interactive buttons for my social medias (linkedin, github, etc)
     
-    When you scroll down, it should fade in on the bottom left corner*/
+    When you scroll down, it should fade in on the bottom left corner
+    
+    Currently, I'm developing applications for staffing at&nbsp;
+              <a href="https://exactstaff.com" target="_blank" rel="noreferrer">
+                Exact Staff
+              </a>
+              .*/
     <section className={styles.heroSection}>
       <div className={styles.heroSectionContainer}>
         <div className={styles.heroItemContainer}>
@@ -33,11 +39,7 @@ const Hero = () => {
           </div>
           <div className={`${styles.heroItem} ${styles.heroItem4}`} style={{  }}>
             <p>
-              I'm a Full Stack Developer with over 10 years of experience engineering remarkable solutions. Currently, I'm developing applications for staffing at&nbsp;
-              <a href="https://exactstaff.com" target="_blank" rel="noreferrer">
-                Exact Staff
-              </a>
-              .
+              I'm a Full Stack Developer with over 10 years of experience engineering remarkable solutions.
             </p>
           </div>
         </div>
