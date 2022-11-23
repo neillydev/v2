@@ -15,7 +15,7 @@ const ExperienceCard = ({ title, duration, achievements, company, companyName, c
             <div className={styles.experienceBodyItem}>
                 <div className={styles.experienceTitle}>
                     {company && <BuildingSvg />}
-                    <h3>{title} {company && <span className={styles.companyName}><a href={`${companyLink}`} target='_blank' rel="noopener noreferrer">{companyName}</a></span>}</h3>
+                    <h3>{title} @ {(company || companyName) && <span className={styles.companyName}><a href={`${company ? companyLink : ''}`} target='_blank' rel="noopener noreferrer">{companyName}</a></span>}</h3>
                 </div>
                 <p>{duration}</p>
                 <ul>
