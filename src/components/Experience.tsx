@@ -9,14 +9,14 @@ const Experience = forwardRef((props: any, ref: any) => {
     const [selected, setSelected] = useState(0);
 
     const experienceArray = [
-        /* {
+        {
             title: 'Software Engineer',
             duration: 'Nov. 2022 - Present',
             achievements: ['No achievements found (yet!)'],
             company: true,
             companyName: 'Ezoic',
             companyLink: 'https://ezoic.com'
-        }, */
+        },
         
         {
             title: 'Full Stack Developer',
@@ -67,13 +67,13 @@ const Experience = forwardRef((props: any, ref: any) => {
                 </div>
                 <div className={styles.experienceBody}>
                     <div className={styles.experienceList}>
-                        {/* <button className={`${styles.experienceTab} ${selected === 0 ? styles.experienceSelected : ''}`} onClick={()=>setSelected(0)}>
-                            <span className={styles.experienceText}>Ezoic</span>
-                        </button> */}
                         <button className={`${styles.experienceTab} ${selected === 0 ? styles.experienceSelected : ''}`} onClick={()=>setSelected(0)}>
-                            <span className={styles.experienceText}>Exact Staff</span>
+                            <span className={styles.experienceText}>Ezoic</span>
                         </button>
                         <button className={`${styles.experienceTab} ${selected === 1 ? styles.experienceSelected : ''}`} onClick={()=>setSelected(1)}>
+                            <span className={styles.experienceText}>Exact Staff</span>
+                        </button>
+                        <button className={`${styles.experienceTab} ${selected === 2 ? styles.experienceSelected : ''}`} onClick={()=>setSelected(2)}>
                             <span className={styles.experienceText}>Freelance</span>
                         </button>
                     </div>
