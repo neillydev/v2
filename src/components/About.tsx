@@ -30,10 +30,10 @@ const About = forwardRef((props: any, ref: any) => {
                         <p>Below are technologies I work with consistently:</p>
                         <ul className={styles.aboutTechnologies}>
                             <li>JavaScript/Typescript</li>
+                            <li>Golang</li>
                             <li>NodeJS</li>
                             <li>Python</li>
-                            <li>React</li>
-                            <li>NextJS</li>
+                            <li>React/NextJS/Vue.JS</li>
                             <li>GraphQL</li>
                         </ul>
                     </div>
