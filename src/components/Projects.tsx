@@ -48,10 +48,10 @@ const Projects = forwardRef((props: any, ref: any) => {
                         />
                     </div>
                     <div className={selected === 1 ? styles.projItem : styles.projVisible}>
-                        <ProjectCard title="Waves" url="https://waves.neilly.dev"
+                        <ProjectCard title="Waves" url="https://surfwaves.io"
                             description="Live short-form video-based social media app that allows users to create, watch, and share videos"
-                            technologies={["React", "Node JS", "PostgreSQL"]}
-                            img="https://camo.githubusercontent.com/93f69877443045fe783bbc15a7746137eb6d30500a8fd2d5ce783db04b2f8dcd/68747470733a2f2f692e6779617a6f2e636f6d2f39376264323633623931666362633232393638373931356261303936396330622e706e67"
+                            technologies={["React", "NextJS", "PostgreSQL"]}
+                            img="https://camo.githubusercontent.com/edb209951d0a1ce45ee130dd05da0761a3bcadeca74f8be4e37712826db03e81/68747470733a2f2f692e6962622e636f2f573243526e6e672f636f7665722d332e706e67"
                             selected={selected}
                             setSelected={setSelected}
                         />
