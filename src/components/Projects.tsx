@@ -51,7 +51,7 @@ const Projects = forwardRef((props: any, ref: any) => {
                         <ProjectCard title="Waves" url="https://surfwaves.io"
                             description="Live short-form video-based social media app that allows users to create, watch, and share videos"
                             technologies={["React", "NextJS", "PostgreSQL"]}
-                            img="https://camo.githubusercontent.com/edb209951d0a1ce45ee130dd05da0761a3bcadeca74f8be4e37712826db03e81/68747470733a2f2f692e6962622e636f2f573243526e6e672f636f7665722d332e706e67"
+                            img="https://img001.prntscr.com/file/img001/wcY4DBQkSPm3HABTgvtdRQ.png"
                             selected={selected}
                             setSelected={setSelected}
                         />
